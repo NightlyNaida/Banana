@@ -11,7 +11,6 @@ global.$ = {
     browserSync: require('browser-sync').create(),
     concat: require('gulp-concat'),
     cleaner: require('gulp-clean'),
-    svgSprite: require('gulp-svg-sprite'),
     path: {
         tasks: require('./gulp/config/tasks.js')
     }
@@ -22,7 +21,7 @@ $.path.tasks.forEach(function (taskPath) {
 });
 
 $.gulp.task('default', $.gulp.series(
-    $.gulp.series('images','svg'),
+    $.gulp.series('images','svg','fonts'),
     $.gulp.parallel('pug','stylus','scripts-ex','script'),
     $.gulp.parallel('watch','serve')  
 ));

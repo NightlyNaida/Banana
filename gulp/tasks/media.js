@@ -5,7 +5,7 @@ module.exports = function(){
     });
 
     $.gulp.task('svg',function(){
-        return $.gulp.src('src/frontend/svg/*.svg', {base: 'src/frontend/'})
+        return $.gulp.src('src/frontend/svg/*.*', {base: 'src/frontend/'})
         .pipe($.gulp.dest('build'))
     })
 }

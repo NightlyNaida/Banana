@@ -1,26 +1,27 @@
 
 .menu-row
     justify-content right 
-    width 100vw
-    margin 0
     height 100vh
-    position absolute
+    position fixed
     display flex
     top 0
     transition opacity .4s ease-in-out   
     opacity 0
+    z-index 1
+    padding 0
+    right 0px
 
 .menu-row-enabled
-    right 0
     opacity 1
 
 
 .menu
     background clr_alt-background
-    padding 0
-    margin-top 9vh
+    padding 8vh 0 0 0
+    width 100%
 
 .links
+    margin-top 20px
     display flex
     flex-direction column
     justify-content center
