@@ -12,8 +12,7 @@ function alo(){
     var object = document.getElementById('banana-contur-box');
     var contentDocument = object.contentDocument;
     var svgObject = contentDocument.getElementById('banana-contur');
-    var image = svgObject.getElementById('image');
-    $(image).css('transition','x .6s ease-out, y .6s ease-out');
+    //$(image).css('transition','x .6s ease-out, y .6s ease-out');
 
     var body = document.body,
         startX = -30,
@@ -29,4 +28,4 @@ function alo(){
     })
   }
 
-setTimeout(alo, 1000);
+//setTimeout(alo, 1000);

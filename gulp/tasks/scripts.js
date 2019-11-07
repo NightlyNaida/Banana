@@ -6,7 +6,7 @@ module.exports = function(){
     });
 
     $.gulp.task('script',function () {
-        return $.gulp.src('src/frontend/js/script.js')
+        return $.gulp.src('src/frontend/js/*.js')
         .pipe($.gulp.dest('build'))
     });
 }
