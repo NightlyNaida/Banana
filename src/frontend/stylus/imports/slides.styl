@@ -1,19 +1,20 @@
 
 .slide
-    margin 0px 0 20px 0
+    margin 30px 0 30px 0
     width 100%
     display flex
     padding 20px 0
     box-sizing border-box
     
 .slide-right
-    justify-content right
+    justify-content flex-end
 
 .slide-right > .slide__info-container > p, .slide-right > .slide__info-container > h1 
     text-align right
+    width 100%
 
 .slide-left
-    justify-content left 
+    justify-content flex-end 
 
 .slide-left > .slide__info-container
     padding 20px 0 20px 50px
@@ -23,7 +24,10 @@
     align-items self-end 
 
 .slide-right > .slide__img-container
-    justify-content left 
+    justify-content flex-start 
+
+.slide__way-of-banana-img
+    align-self flex-end
 
 .slide__info-container-thermometer
     background url('svg/thermometer.svg')
@@ -74,7 +78,7 @@
     height 90vh
     padding 0
     display flex
-    justify-content right 
+    justify-content flex-end 
      
 .bg-image
     border none
