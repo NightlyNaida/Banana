@@ -1,199 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>#BANANA!</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="style.css"/>
-  </head>
-  <body>
-    <header>
-      <div class="row row-header">
-        <div class="header col">
-          <div class="logo-place"><img class="logo-place__image" src="img/logo.png" alt="logo"/></div>
-          <div class="func-buttons">
-            <form class="search-form" action="GET">
-              <input class="search-form__input" type="text" name="search-text-box" placeholder="Поиск..."/>
-            </form>
-            <button class="button-search">    </button>
-            <button class="button-menu"></button>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="row menu-row col-5">
-      <div class="justify-content-right menu">
-        <nav class="links"><a class="menu__link" href="">Бананы</a><a class="menu__link" href="">Банановые этикетки</a><a class="menu__link" href="">Блюда из бананов</a><a class="menu__link" href="">Рейтинг бананов</a><a class="menu__link" href="">Форум</a>
-          <div class="cross-line"></div><a class="menu__link" href="">Аккаунт</a>
-          <div class="cross-line"> </div><a class="menu__link" href="">Контакты</a>
-        </nav>
-      </div>
-    </div>
-    <section class="slides">
-      <div class="slide slide-left slide-1 row">
-        <div class="slide__info-container col-8 slide__info-container-thermometer">
-          <!--object(id="thermometer-box" type="image/svg+xml" data="svg/thermometer.svg")-->
-          <h1 class="slide__caption">Капризный и очень слабый</h1>
-          <p class="slide__text">
-            Пальма банана - очень прихотливое растение. Ей нужно много воды с большим содержанием 
-            питательных веществ, много солнечных лучей и, 
-            конечно же, теплая температура.
-          </p>
-          <p class="slide__big-txt">16°C</p>
-          <p class="slide__text">
-            Критическей порог для пальмы банана. Если температура буде ниже, Рост значительно замедлится.</p>
-        </div>
-        <div class="slide__img-container col-4">
-          <object class="banana-contur-box" type="image/svg+xml" data="svg/banana-contur-s1.svg"></object>
-        </div>
-      </div>
-      <div class="underline-box underline-box-left">
-        <div class="underline col-8"> </div>
-      </div>
-      <div class="slide slide-right slide-2 row">
-        <div class="slide__img-container col-4">
-          <object class="banana-contur-box" type="image/svg+xml" data="svg/banana-contur-s2.svg"></object>
-        </div>
-        <div class="slide__info-container col-8 slide__info-container-cargo">
-          <!--object(id="thermometer-box" type="image/svg+xml" data="svg/thermometer.svg")-->
-          <h1 class="slide__caption">Дорога перемен</h1>
-          <p class="slide__text">
-            Вас наверняка удивит тот факт, что бананы дозревают по пути в магазин. Срывают и упаковывают бананы в зелёном, недозрелом виде. Сделано 
-            это не для выигрыша времени до истечения срока годности, как может 
-            показаться на первый взгляд, а для сбережения вкусовых качеств. 
-            Если плод оставить дозревать на пальме, он получится невкусным.
-          </p><img class="slide__way-of-banana-img" src="img/wayBanana.png"/>
-          <p class="slide__big-txt slide__big-txt-no-margin">76%</p>
-          <p class="slide__text">Бананов транспортируется по морю</p>
-        </div>
-      </div>
-      <div class="underline-box underline-box-right">
-        <div class="underline col-8"></div>
-      </div>
-      <div class="slide slide-3 slide-left row">
-        <div class="slide__info-container col-8 slide__info-container-thermometer">
-          <!--object(id="thermometer-box" type="image/svg+xml" data="svg/thermometer.svg")-->
-          <h1 class="slide__caption">Вдарим бананом по унынию</h1>
-          <p class="slide__text">
-            Благотворное влияние бананов на состояние нервной системы – еще один серьезный копилку полезных качеств. Регулярное 
-            употребление банана поможет вам избежать депрессию. 
-          </p>
-          <p class="slide__big-txt">2-1<span>в день</span></p>
-          <p class="slide__text">
-            Рекомендуемое количество бананов для употребления. Не забывайте, что злоупотребление любым продуктом, 
-            как и бананом, ни к чему хорошему не приведёт. 
-          </p>
-        </div>
-        <div class="slide__img-container col-4">
-          <object class="banana-contur-box" type="image/svg+xml" data="svg/banana-contur-s3.svg"></object>
-        </div>
-      </div>
-      <div class="underline-box underline-box-left">
-        <div class="underline col-8"> </div>
-      </div>
-      <div class="slide slide-4 row slide-right">
-        <div class="slide__info-container slide__info-container-no-height">
-          <h1 class="slide__caption">Главные по бананам</h1>
-          <p class="slide__text">Страны-лидеры по выращиванию бананов</p>
-        </div>
-        <object id="map" type="image/svg+xml" data="svg/world.svg"></object>
-      </div>
-      <div class="underline-box underline-box-right">
-        <div class="underline col-8"></div>
-      </div>
-      <div class="row slide slide-5 slide-left">
-        <div class="slide__info-container slide__info-container-no-height">
-          <h1 class="slide__caption">Главные по бананам</h1>
-          <p class="slide__text">Страны-лидеры по выращиванию бананов</p>
-        </div>
-        <div class="gistogrqamm-box">
-          <div class="gistogrqamm-box-lines">
-            <div class="gistogrqamm-box__line-box">
-              <div class="gistogrqamm-box__line"></div>
-            </div>
-            <div class="gistogrqamm-box__line-box">
-              <div class="gistogrqamm-box__line"></div>
-            </div>
-            <div class="gistogrqamm-box__line-box">
-              <div class="gistogrqamm-box__line"></div>
-            </div>
-            <div class="gistogrqamm-box__line-box">
-              <div class="gistogrqamm-box__line"></div>
-            </div>
-            <div class="gistogrqamm-box__line-box">
-              <div class="gistogrqamm-box__line"></div>
-            </div>
-            <div class="gistogrqamm-box__line-box">
-              <div class="gistogrqamm-box__line"></div>
-            </div>
-          </div>
-          <div class="columns-box">
-            <div class="column-box">
-              <div class="column"></div>
-              <div class="column__text-box">
-                <p class="country-name">Индия</p><img class="country-flag-image" src="img/india.png" alt=""/>
-                <p class="banana-count">24869</p>
-              </div>
-            </div>
-            <div class="column-box">
-              <div class="column"></div>
-              <div class="column__text-box">
-                <p class="country-name">Китай</p><img class="country-flag-image" src="img/china.png" alt=""/>
-                <p class="banana-count">17545</p>
-              </div>
-            </div>
-            <div class="column-box">
-              <div class="column"></div>
-              <div class="column__text-box">
-                <p class="country-name">Филлипины</p><img class="country-flag-image" src="img/philippines.png" alt=""/>
-                <p class="banana-count">9225</p>
-              </div>
-            </div>
-            <div class="column-box">
-              <div class="column"></div>
-              <div class="column__text-box">
-                <p class="country-name">Эквадор</p><img class="country-flag-image" src="img/ecuador.png" alt=""/>
-                <p class="banana-count">7012</p>
-              </div>
-            </div>
-            <div class="column-box">
-              <div class="column"></div>
-              <div class="column__text-box"> 
-                <p class="country-name">Бразилия</p><img class="country-flag-image" src="img/brazil(1).png" alt=""/>
-                <p class="banana-count">6902</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="footer row">
-      <div class="col logo-area"><img class="logo-area__image" src="img/logo.png" alt="logo"/></div>
-      <div class="col social-area">
-        <h3 class="footer-caption">Социальные сети </h3>
-        <div class="social-icons"></div>
-      </div>
-      <div class="col sep-line-area">
-        <div class="footer__sep-line"></div>
-      </div>
-      <div class="col politics-area">
-        <h3 class="footer-caption">Политика </h3>
-        <p class="footer-text">Условия использования</p>
-        <p class="footer-text">Политика конфедециальности</p>
-        <p class="footer-text">Политика cookie</p>
-      </div>
-      <div class="col contacts-area">
-        <h3 class="footer-caption">Контакты </h3>
-        <p class="footer-text">Адреса</p>
-        <p class="footer-text">Телефоны</p>
-        <p class="footer-text">Поддержка клиентов</p>
-        <p class="footer-text">Почта</p>
-      </div>
-    </div>
-    <script src="libs.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-  </body>
-</html>
+<p>Прибор засбоил. Что делать? Нести в ремонт или попытаться разобраться самостоятельно? Если всё делать аккуратно, ремонт никуда не уйдёт, в мастерскую всегда успеем.&nbsp;В электронных приборах есть разные детали &mdash; микросхемы, конденсаторы, транзисторы, диоды. И сопротивления, они же резисторы.Сегодня измеряем сопротивление.</p>
+<h2>Готовим мультиметр</h2>
+<p>В первую очередь осматриваем провода и щупы на предмет видимых повреждений. Априори негодные провода меняем или ремонтируем &mdash; хотя бы на скрутку, изолируем синей изолентой.Подойдёт и другой цвет, лишь бы изолента изолировала.</p>
+<p>Далее осматриваем щупы. Если случайный скол оголил токонесущие части, обматываем той же изолентой.&nbsp;</p>
+<p>Делается это не только из соображений безопасности, но и во избежание погрешностей при измерениях.&nbsp;</p>
+<p>Третьим этапом проверяем питание. Индикатор горит &mdash; уже хорошо.&nbsp;</p>
+<p>Включаем один провод в гнездо COM, другой штекер вставляем в кабельный ввод с символикой единиц измерения. V &mdash; Вольты, A &mdash; амперы. А мы сегодня меряем омы, которые обозначены заглавной буквой Омега.</p>
+<p>Переключатель прибора загоняем в зелёную зону обозначенную той же греческой буквой, ориентируясь на предел измерений. Смотрим номинал резистора и ставим ближайший сверху предел. Допустим, резистор на 10 Ом &mdash; ставим 20.</p>
+<p>Пока щупы ничего не касаются, на мультиметре значение 1. Если щупы замкнуть, должно быть значение 0.&nbsp;</p>
+<h2>Какие бывают резисторы</h2>
+<p>Резисторы отличаются технологией и материалами, а также функционалом.</p>
+<p>С точки зрения прозвонки, подробности химического состава и высокая технология производства нас интересуют мало.</p>
+<p>А вот по функционалу резисторы бывают постоянными и переменными. Переменные сопротивления ещё называют потенциометрами.</p>
+<p>У постоянного резистора два вывода, у потенциометра их три &mdash; не зря их ещё называют делителями напряжения. Один вход, два выхода, крутилка или движок перераспределяет ток между двумя исходящими контактами, оставляя его суммарную величину постоянной &mdash; запомним этот факт.&nbsp;</p>
+<h2>Как правильно измерять сопротивление</h2>
+<p>Первое и основное. Нельзя касаться руками оголённых частей щупа или контактов резистора. И вовсе не потому, что ток мультиметра вас убъёт. А потому, что человеческое тело тоже имеет своё сопротивление. При включении параллельно два резистора образуют один. И прибор вам покажет не сопротивление одной детали, а сопротивление системы &laquo;Вася+резистор&raquo;.&nbsp;</p>
+<p>Ток в такой схеме не пойдёт через сопротивление &mdash; зачем, есть же более простой путь. Так и в случае с Васей.</p>
+<h2>Переходим к измерениям</h2>
+<p>Итак, деталь на столе, щупы в руках, мультиметр в зелёной зоне, предел выставлен верно. Мы готовы.</p>
+<p>Прикладываем щупы к кабельным выводам постоянного резистора. Смотрим на табло. Если деталь исправна, табло покажет номинал, обозначенный на её корпусе. Для резисторов производства СССР допускалось отклонение на 10 % как в плюс, так и в минус.</p>
+<p>Переменный резистор проверяется чуть сложнее.</p>
+<p>Крутим крутилку влево до упора. В таком положении сопротивление между крайними выводами должно соответствовать номиналу резистора. Проверяем этот факт.</p>
+<p>Далее крутим регулятор вправо. Ставим примерно на середину. И замеряем сопротивление между левым и средним контактом. Записываем. Измеряем сопротивление между правым и средним контактом. Записываем. Складываем &mdash; должны получить результат первого измерения.</p>
+<p>Смотрим, как измеряют сопротивление цифровым мультиметром.</p>
+<p>Бесплатный <a href="https://html-cleaner.com/css/"> онлайн-порядок CSS</a> позволяет вам украшать таблицы стилей. Проверьте это сейчас на html-cleaner.com!</p>
