@@ -1,0 +1,102 @@
+.options-bar
+    border-top 1px solid clr_grey
+    border-bottom 1px solid clr_grey
+
+    display grid
+    grid-template-columns 1fr 1fr
+
+    width 100%
+    height 80px
+
+    padding 0 20px 0 20px
+
+.options-bar__bread-crumbs, .options-bar__sort-method
+    display flex
+    justify-content center
+    flex-direction column
+
+.options-bar__bread-crumbs > p, .options-bar__sort-method > p
+    margin 0px
+
+.options-bar__parent-pages, .options-bar-sort-caption
+    color clr_grey
+    font-weight 400
+
+.options-bar__current-page, .options-bar-sort-current
+    color clr_yellow
+    font-weight 600
+    font-size 1.3em
+
+.options-bar__parent-pages, .options-bar__current-page
+    padding-left 5px
+
+.options-bar-sort-caption, .options-bar-sort-current
+    padding-right 5px
+
+.options-bar__bread-crumbs
+    align-items flex-start
+
+.options-bar__sort-method-caption-container
+    display flex
+    align-items center
+    transition all 0.4s ease-out
+    position relative
+    cursor pointer
+
+.options-bar__sort-method-caption-container:hover
+    background-color clr_dark-background
+    padding 5px 5px 5px 5px
+    border-radius 10px
+
+.options-bar-sort-caption
+    margin 0 0 0 5px
+
+.options-bar-sort-icon
+    width auto
+    height 7px
+    transform rotate(90deg)
+    transition all 0.4s ease-out
+
+.options-bar-sort-icon-rotate 
+    transform rotate(0)
+
+.options-bar__sort-method
+    align-items flex-end
+
+.chocieBox
+    position absolute 
+    background-color clr_dark-background
+    padding 5px 5px 5px 5px
+    border-radius 0 0 10px 10px
+    top 40%
+    left 0
+    width 100%
+    opacity 0
+    transition all 0.4s ease-out
+    padding 0
+    overflow hidden
+
+.chocieBox-show
+    opacity 1
+    top 100%
+
+.choiceBox__item
+    background-color clr_dark-background
+    padding 5px 0 5px 10px
+
+.choiceBox__item:hover
+    background-color clr_alt-background
+
+.value
+    color clr_grey
+    font-size 0.9em
+    margin 0
+    display inline-block
+    height 100%
+    width 100%
+    background-color clr_dark-background
+    padding 5px 0 5px 10px
+
+.value:hover
+    color clr_yellow
+    background-color clr_alt-background

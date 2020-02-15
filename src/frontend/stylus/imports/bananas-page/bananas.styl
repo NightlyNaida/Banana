@@ -1,0 +1,72 @@
+@require 'options-bar.styl'
+
+.bananas-list
+    display grid
+    padding 20px 40px
+    grid-template-columns 1fr 1fr 1fr 1fr
+    grid-auto-rows 350px
+    grid-gap 15px
+
+.banana-item
+    background-color clr_alt-background
+    border-radius 10px
+    display grid
+    grid-template-columns 1fr
+    grid-template-rows 1fr 2fr
+    grid-gap 40px
+    padding 10px 25px 30px 25px
+
+.banana-item__img-container
+    display flex
+    justify-content center
+    align-items center
+
+.banana-item__info-container
+    display grid
+    grid-template-rows 1fr 1fr
+
+.banana-item__img
+    max-height 150px
+
+.banana-item__name-ru
+    color clr_yellow
+    font-size fnt-sz_middle-plus
+    font-weight 700
+    margin 0
+
+.banana-item__bottom-container
+    height auto
+    display grid
+    grid-template-columns 1fr 1fr
+
+.banana-item__rate-container, .banana-item__button-container
+    display flex
+    align-items flex-end
+
+.banana-item__rate-item
+    margin-right 5px
+
+.banana-item__rate-score, .banana-item__rate-remains
+    pointer-events none
+
+.banana-item__button
+    color clr_yellow
+    border 1px solid clr_yellow
+    background-color rgba(0,0,0,0)
+    border-radius 30px
+    width 100%
+    height 35px
+    transition-property color, border, background-color
+    transition-duration:  .4s
+    transition-timing-function ease-in 
+
+
+.banana-item__button:hover
+    color clr_alt-background 
+    border 1px solid clr_alt-background
+    background-color clr_yellow
+
+.banana-item__button:active
+    transform scale(0.95)
+
+    

@@ -1,5 +1,5 @@
 {
-  "name": "fuche",
+  "name": "banana",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -29,5 +29,13 @@
   },
   "dependencies": {
     "jquery": "^3.4.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NightlyNaida/Banana.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NightlyNaida/Banana/issues"
+  },
+  "homepage": "https://github.com/NightlyNaida/Banana#readme"
 }

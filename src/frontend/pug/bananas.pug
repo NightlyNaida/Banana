@@ -1,0 +1,35 @@
+mixin banan-item(data)
+    .banana-item
+        .banana-item__img-container
+            img.banana-item__img(src=data.imgSrc)
+        .banana-item__info-container
+            .banana-item__names
+                p.banana-item__name-ru=data.nameRu
+                p.banana-item__name-eng=data.nameEng
+            .banana-item__bottom-container
+                .banana-item__rate-container
+                        - for(var i = 0; i < Number.parseInt(data.rate); i++)
+                            .banana-item__rate-item
+                                object.banana-item__rate-score(type="image/svg+xml" data="svg/banana-contur.svg")
+                        - for(var i = 0; i < (5 - Number.parseInt(data.rate)); i++)
+                            .banana-item__rate-item
+                                object.banana-item__rate-remains(type="image/svg+xml" data="svg/banana-contur.svg") 
+                .banana-item__button-container
+                    button.banana-item__button Подробнее
+html(lang="ru")
+    include parts/head/head.pug
+    body
+    include parts/header/header.pug
+    include parts/menu/menu.pug
+    include parts/bananas-page/options-bar.pug
+    main.bananas-list
+        -var bananasRu = ['Гро-Мишель','Барро','Плантайн','Красный','Айс Крим','Майсур','Гиганский Кавендишь','Раджапури','Лакатан'];
+        -var bananasEng =['Gros Michel','Barro','Plantane','Red Banana', 'Ice Cream', 'Mysore','Giant Cavendish','Rajapuri','Lakatan'];
+        -var rates =[5,3,3,4,5,5,5,3,3]
+        -for(var i = 0; i < bananasRu.length; i++)
+            +banan-item({imgSrc:'img/bananas/' + (i+1) + '.png' , nameRu: bananasRu[i] , nameEng: bananasEng[i] , rate: rates[i]}) 
+    //include parts/footer/footer.pug
+    script(src="libs.min.js")
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    script(src="script.js")
